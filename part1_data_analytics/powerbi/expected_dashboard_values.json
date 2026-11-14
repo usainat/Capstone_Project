@@ -1,0 +1,273 @@
+{
+  "daily_trend_summary_2015_2017": [
+    {
+      "average_of_daily_averages": 3232.94,
+      "highest_daily_average": 4681.0,
+      "lowest_daily_average": 1478.15,
+      "observed_days": 195,
+      "year": 2015
+    },
+    {
+      "average_of_daily_averages": 3199.3,
+      "highest_daily_average": 4238.74,
+      "lowest_daily_average": 192.94,
+      "observed_days": 366,
+      "year": 2016
+    },
+    {
+      "average_of_daily_averages": 3347.68,
+      "highest_daily_average": 4555.17,
+      "lowest_daily_average": 1751.05,
+      "observed_days": 365,
+      "year": 2017
+    }
+  ],
+  "data_quality": {
+    "distinct_hours": 40575,
+    "power_query_columns_after_transformations": 12,
+    "rows_with_nulls": 0,
+    "source_columns": 9,
+    "source_rows": 48204
+  },
+  "hourly_traffic_2017": [
+    {
+      "average_traffic_volume": 921.45,
+      "hour": 0,
+      "source_records": 454
+    },
+    {
+      "average_traffic_volume": 546.99,
+      "hour": 1,
+      "source_records": 459
+    },
+    {
+      "average_traffic_volume": 398.19,
+      "hour": 2,
+      "source_records": 453
+    },
+    {
+      "average_traffic_volume": 381.71,
+      "hour": 3,
+      "source_records": 456
+    },
+    {
+      "average_traffic_volume": 735.82,
+      "hour": 4,
+      "source_records": 451
+    },
+    {
+      "average_traffic_volume": 2172.63,
+      "hour": 5,
+      "source_records": 449
+    },
+    {
+      "average_traffic_volume": 4305.28,
+      "hour": 6,
+      "source_records": 449
+    },
+    {
+      "average_traffic_volume": 4879.8,
+      "hour": 7,
+      "source_records": 455
+    },
+    {
+      "average_traffic_volume": 4716.23,
+      "hour": 8,
+      "source_records": 448
+    },
+    {
+      "average_traffic_volume": 4488.8,
+      "hour": 9,
+      "source_records": 457
+    },
+    {
+      "average_traffic_volume": 4259.88,
+      "hour": 10,
+      "source_records": 449
+    },
+    {
+      "average_traffic_volume": 4546.28,
+      "hour": 11,
+      "source_records": 427
+    },
+    {
+      "average_traffic_volume": 4804.14,
+      "hour": 12,
+      "source_records": 417
+    },
+    {
+      "average_traffic_volume": 4794.32,
+      "hour": 13,
+      "source_records": 423
+    },
+    {
+      "average_traffic_volume": 4982.5,
+      "hour": 14,
+      "source_records": 424
+    },
+    {
+      "average_traffic_volume": 5316.31,
+      "hour": 15,
+      "source_records": 432
+    },
+    {
+      "average_traffic_volume": 5797.54,
+      "hour": 16,
+      "source_records": 430
+    },
+    {
+      "average_traffic_volume": 5469.6,
+      "hour": 17,
+      "source_records": 433
+    },
+    {
+      "average_traffic_volume": 4386.57,
+      "hour": 18,
+      "source_records": 434
+    },
+    {
+      "average_traffic_volume": 3405.74,
+      "hour": 19,
+      "source_records": 432
+    },
+    {
+      "average_traffic_volume": 2937.8,
+      "hour": 20,
+      "source_records": 440
+    },
+    {
+      "average_traffic_volume": 2773.5,
+      "hour": 21,
+      "source_records": 442
+    },
+    {
+      "average_traffic_volume": 2322.39,
+      "hour": 22,
+      "source_records": 447
+    },
+    {
+      "average_traffic_volume": 1558.22,
+      "hour": 23,
+      "source_records": 444
+    }
+  ],
+  "hourly_traffic_2017_summary": {
+    "busiest_hour": {
+      "average_traffic_volume": 5797.54,
+      "hour": 16,
+      "source_records": 430
+    },
+    "quietest_hour": {
+      "average_traffic_volume": 381.71,
+      "hour": 3,
+      "source_records": 456
+    }
+  },
+  "kpis": {
+    "average_temperature_celsius": 8.06,
+    "average_temperature_kelvin": 281.21,
+    "average_traffic_volume": 3259.82,
+    "source_rows": 48204,
+    "total_hours_analyzed": 40575
+  },
+  "slicers": {
+    "hour_maximum": 23,
+    "hour_minimum": 0,
+    "traffic_category_count": 3,
+    "weather_condition_count": 11
+  },
+  "temperature_scatter_summary": {
+    "high_traffic_temperature_maximum_kelvin": 309.29,
+    "high_traffic_temperature_median_kelvin": 284.382,
+    "high_traffic_temperature_minimum_kelvin": 247.15,
+    "high_traffic_temperature_q1_kelvin": 274.31,
+    "high_traffic_temperature_q3_kelvin": 292.35,
+    "high_traffic_valid_temperature_records": 7100,
+    "zero_kelvin_outliers": 10,
+    "zero_traffic_observations": 2
+  },
+  "traffic_category_counts": [
+    {
+      "source_records": 7100,
+      "traffic_category": "High"
+    },
+    {
+      "source_records": 31237,
+      "traffic_category": "Low"
+    },
+    {
+      "source_records": 9867,
+      "traffic_category": "Medium"
+    }
+  ],
+  "weather_impact": [
+    {
+      "average_traffic_volume": 3618.45,
+      "source_records": 15164,
+      "weather_main": "Clouds"
+    },
+    {
+      "average_traffic_volume": 3502.1,
+      "source_records": 1360,
+      "weather_main": "Haze"
+    },
+    {
+      "average_traffic_volume": 3317.91,
+      "source_records": 5672,
+      "weather_main": "Rain"
+    },
+    {
+      "average_traffic_volume": 3290.73,
+      "source_records": 1821,
+      "weather_main": "Drizzle"
+    },
+    {
+      "average_traffic_volume": 3237.65,
+      "source_records": 20,
+      "weather_main": "Smoke"
+    },
+    {
+      "average_traffic_volume": 3055.91,
+      "source_records": 13391,
+      "weather_main": "Clear"
+    },
+    {
+      "average_traffic_volume": 3016.84,
+      "source_records": 2876,
+      "weather_main": "Snow"
+    },
+    {
+      "average_traffic_volume": 3001.62,
+      "source_records": 1034,
+      "weather_main": "Thunderstorm"
+    },
+    {
+      "average_traffic_volume": 2932.96,
+      "source_records": 5950,
+      "weather_main": "Mist"
+    },
+    {
+      "average_traffic_volume": 2703.72,
+      "source_records": 912,
+      "weather_main": "Fog"
+    },
+    {
+      "average_traffic_volume": 2061.75,
+      "source_records": 4,
+      "weather_main": "Squall"
+    }
+  ],
+  "weather_impact_summary": {
+    "highest_average": {
+      "average_traffic_volume": 3618.45,
+      "source_records": 15164,
+      "weather_main": "Clouds"
+    },
+    "highest_minus_lowest": 1556.7,
+    "lowest_average": {
+      "average_traffic_volume": 2061.75,
+      "source_records": 4,
+      "weather_main": "Squall"
+    }
+  }
+}

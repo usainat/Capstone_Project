@@ -1,0 +1,31 @@
+// Create these calculated columns on the Traffic table.
+
+Traffic Date =
+DATE(
+    YEAR(Traffic[date_time]),
+    MONTH(Traffic[date_time]),
+    DAY(Traffic[date_time])
+)
+
+Year =
+YEAR(Traffic[date_time])
+
+// Create these measures on the Traffic table.
+
+Source Records =
+COUNTROWS(Traffic)
+
+Total Hours Analyzed =
+DISTINCTCOUNT(Traffic[date_time])
+
+Average Traffic Volume =
+AVERAGE(Traffic[traffic_volume])
+
+Average Temperature Celsius =
+AVERAGE(Traffic[Temperature_Celsius])
+
+Daily Average Traffic =
+AVERAGE(Traffic[traffic_volume])
+
+Weather Average Traffic =
+AVERAGE(Traffic[traffic_volume])
