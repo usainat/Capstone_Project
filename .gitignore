@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Jupyter-generated files
+.ipynb_checkpoints/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local editor and coding-agent files
+.idea/
+.codex/
+
+# Microsoft Office temporary lock files
+~$*
+
+# Supplied course documents are reference material, not project deliverables
+NUSSOC_AMLDS_*.docx
