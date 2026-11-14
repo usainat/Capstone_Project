@@ -1,0 +1,31 @@
+2026-11-14 23:02:29,037 | INFO | __main__ | Logging configured at INFO level; file=/Users/husa/software/AI/nus course/Capstone Project/part2_python/logs/pipeline.log
+2026-11-14 23:02:29,051 | INFO | __main__ | Loaded raw CSV Metro_Interstate_Traffic_Volume.csv with 48204 rows and 9 columns
+2026-11-14 23:02:29,051 | INFO | __main__ | Schema validation passed for 9 columns
+2026-11-14 23:02:29,058 | INFO | __main__ | Categorical column holiday required no changes
+2026-11-14 23:02:29,065 | INFO | __main__ | Categorical column weather_main required no changes
+2026-11-14 23:02:29,073 | WARNING | __main__ | Standardized 1730 values in categorical column weather_description
+2026-11-14 23:02:29,078 | INFO | __main__ | Parsed date_time successfully; range 2012-10-02 09:00:00 to 2018-09-30 23:00:00
+2026-11-14 23:02:29,079 | INFO | __main__ | Numerical conversion passed for temp
+2026-11-14 23:02:29,079 | INFO | __main__ | Numerical conversion passed for rain_1h
+2026-11-14 23:02:29,080 | INFO | __main__ | Numerical conversion passed for snow_1h
+2026-11-14 23:02:29,080 | INFO | __main__ | Numerical conversion passed for clouds_all
+2026-11-14 23:02:29,080 | INFO | __main__ | Numerical conversion passed for traffic_volume
+2026-11-14 23:02:29,081 | INFO | __main__ | No rows had missing traffic_volume targets
+2026-11-14 23:02:29,081 | INFO | __main__ | No values required imputation in temp: missing numerical value
+2026-11-14 23:02:29,081 | INFO | __main__ | No values required imputation in rain_1h: missing numerical value
+2026-11-14 23:02:29,081 | INFO | __main__ | No values required imputation in snow_1h: missing numerical value
+2026-11-14 23:02:29,082 | INFO | __main__ | No values required imputation in clouds_all: missing numerical value
+2026-11-14 23:02:29,098 | WARNING | __main__ | Dropped 17 exact duplicate rows; 48187 rows remain
+2026-11-14 23:02:29,100 | WARNING | __main__ | Imputed 4 values in temp for 2014-01 with median 261.2900: temperature must be above 0 K
+2026-11-14 23:02:29,101 | WARNING | __main__ | Imputed 6 values in temp for 2014-02 with median 259.5000: temperature must be above 0 K
+2026-11-14 23:02:29,103 | WARNING | __main__ | Imputed 1 values in rain_1h for 2016-07 with median 0.0000: rainfall must be between 0 and 9,000 mm
+2026-11-14 23:02:29,103 | INFO | __main__ | No values required imputation in snow_1h: snowfall cannot be negative
+2026-11-14 23:02:29,104 | INFO | __main__ | No values required imputation in clouds_all: cloud percentage must be between 0 and 100
+2026-11-14 23:02:29,104 | INFO | __main__ | No negative traffic-volume rows were found
+2026-11-14 23:02:29,104 | WARNING | __main__ | Retained 2 zero-traffic rows for investigation; no evidence supports imputation
+2026-11-14 23:02:29,107 | WARNING | __main__ | Preserved 13042 rows belonging to repeated timestamps (7612 additional records) because they contain distinct weather observations
+2026-11-14 23:02:29,116 | INFO | __main__ | Cleaned-data validation passed
+2026-11-14 23:02:29,118 | INFO | __main__ | Cleaning completed: raw_rows=48204 cleaned_rows=48187 rows_removed=17
+2026-11-14 23:02:29,185 | INFO | __main__ | Saved cleaned dataset to /Users/husa/software/AI/nus course/Capstone Project/part2_python/data/processed/traffic_cleaned.csv
+2026-11-14 23:02:29,185 | INFO | __main__ | Saved cleaning summary to /Users/husa/software/AI/nus course/Capstone Project/part2_python/data/processed/cleaning_summary.json
+2026-11-14 23:02:29,186 | INFO | __main__ | Pipeline completed successfully

@@ -1,0 +1,48 @@
+{
+  "additional_timestamp_records_preserved": 7612,
+  "category_change_counts": {
+    "holiday": 0,
+    "weather_description": 1730,
+    "weather_main": 0
+  },
+  "cleaned_rows": 48187,
+  "exact_duplicates_removed": 17,
+  "missing_value_imputations": {
+    "clouds_all": {},
+    "rain_1h": {},
+    "snow_1h": {},
+    "temp": {}
+  },
+  "numeric_coercion_counts": {
+    "clouds_all": 0,
+    "rain_1h": 0,
+    "snow_1h": 0,
+    "temp": 0,
+    "traffic_volume": 0
+  },
+  "outlier_imputations": {
+    "clouds_all": {},
+    "rain_1h": {
+      "2016-07": {
+        "affected_rows": 1,
+        "replacement_median": 0.0
+      }
+    },
+    "snow_1h": {},
+    "temp": {
+      "2014-01": {
+        "affected_rows": 4,
+        "replacement_median": 261.29
+      },
+      "2014-02": {
+        "affected_rows": 6,
+        "replacement_median": 259.5
+      }
+    }
+  },
+  "raw_rows": 48204,
+  "rows_removed": 17,
+  "unique_timestamps": 40575,
+  "unique_weather_descriptions": 37,
+  "zero_traffic_rows_retained": 2
+}
