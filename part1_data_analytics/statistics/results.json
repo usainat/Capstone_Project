@@ -1,0 +1,64 @@
+{
+  "analysis_unit": "source record",
+  "correlation": {
+    "excluding_zero_kelvin": 0.13229131507313127,
+    "raw_temperature_vs_traffic": 0.13029879817112658,
+    "zero_kelvin_records_excluded": 10
+  },
+  "descriptive_statistics": {
+    "count": 48204,
+    "maximum": 7280,
+    "mean": 3259.8183553232097,
+    "median": 3380.0,
+    "minimum": 0,
+    "population_standard_deviation": 1986.8400614618865,
+    "population_variance": 3947533.429829873,
+    "range": 7280,
+    "sample_standard_deviation": 1986.8606704463587,
+    "sample_variance": 3947615.3237665542
+  },
+  "event_counts": {
+    "all_records": 48204,
+    "clear_weather": 13391,
+    "cloudy_weather": 15164,
+    "congestion": 7100,
+    "congestion_and_clear": 1763,
+    "high_temperature_and_congestion": 1867
+  },
+  "hourly_sensitivity": {
+    "mean": 3290.650474430068,
+    "median": 3427,
+    "sample_standard_deviation": 1984.7729092722152,
+    "unique_hours": 40575
+  },
+  "independence": {
+    "difference": -0.004343405379294112,
+    "independent_under_equality_rule": false,
+    "observed_joint_probability": 0.03657372832130114,
+    "product_of_marginals": 0.04091713370059525
+  },
+  "odds_ratio_clear_vs_cloudy": {
+    "clear_congested": 1763,
+    "clear_congestion_odds": 0.15161678706570347,
+    "clear_not_congested": 11628,
+    "cloudy_congested": 2592,
+    "cloudy_congestion_odds": 0.20617244670696785,
+    "cloudy_not_congested": 12572,
+    "odds_ratio": 0.7353882125733118,
+    "probability_congestion_given_clear": 0.13165558957508774,
+    "probability_congestion_given_cloudy": 0.17093115273015036
+  },
+  "probabilities": {
+    "P_clear_weather": 0.277798522944154,
+    "P_clear_weather_given_congestion": 0.2483098591549296,
+    "P_congestion": 0.1472906812712638,
+    "P_congestion_and_clear_weather": 0.03657372832130114,
+    "P_high_temperature_given_congestion": 0.26295774647887327
+  },
+  "thresholds_and_definitions": {
+    "clear_weather": "weather_main == 'Clear'",
+    "cloudy_weather": "weather_main == 'Clouds'",
+    "congestion": "traffic_volume > 5500",
+    "high_temperature": "temp > 292 K"
+  }
+}
