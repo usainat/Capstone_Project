@@ -1,0 +1,16 @@
+2026-11-14 23:32:47,725 | INFO | __main__ | Logging configured at DEBUG level; file=/Users/husa/software/AI/nus course/Capstone Project/part2_python/logs/feature_engineering.log
+2026-11-14 23:32:47,739 | INFO | __main__ | Loaded cleaned CSV traffic_cleaned.csv with 48187 rows and 9 columns
+2026-11-14 23:32:47,748 | INFO | __main__ | Input validation and traffic-target consistency checks passed
+2026-11-14 23:32:47,918 | INFO | __main__ | Consolidated 48187 records into 40575 unique hourly rows
+2026-11-14 23:32:48,056 | INFO | __main__ | Created 11 multi-hot weather features
+2026-11-14 23:32:48,056 | DEBUG | __main__ | Weather feature columns: ['weather_Clear', 'weather_Clouds', 'weather_Drizzle', 'weather_Fog', 'weather_Haze', 'weather_Mist', 'weather_Rain', 'weather_Smoke', 'weather_Snow', 'weather_Squall', 'weather_Thunderstorm']
+2026-11-14 23:32:48,062 | INFO | __main__ | Created time, cyclical, holiday and derived weather indicators
+2026-11-14 23:32:48,063 | DEBUG | __main__ | Scaling parameters for temp: mean=281.380010 std=13.096263
+2026-11-14 23:32:48,064 | DEBUG | __main__ | Scaling parameters for clouds_all: mean=44.201121 std=38.680787
+2026-11-14 23:32:48,064 | INFO | __main__ | Created two z-score features and two log-transformed features
+2026-11-14 23:32:48,065 | DEBUG | __main__ | Congestion quartiles: q1=1248.5000 q2=3427.0000 q3=4952.0000
+2026-11-14 23:32:48,076 | INFO | __main__ | Feature-table validation passed
+2026-11-14 23:32:48,076 | INFO | __main__ | Feature engineering completed: output_rows=40575 output_columns=36
+2026-11-14 23:32:48,305 | INFO | __main__ | Saved hourly feature table to /Users/husa/software/AI/nus course/Capstone Project/part2_python/data/processed/traffic_features.csv
+2026-11-14 23:32:48,305 | INFO | __main__ | Saved feature metadata to /Users/husa/software/AI/nus course/Capstone Project/part2_python/data/processed/feature_metadata.json
+2026-11-14 23:32:48,306 | INFO | __main__ | Feature-engineering pipeline completed successfully

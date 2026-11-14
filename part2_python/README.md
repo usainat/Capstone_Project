@@ -1,8 +1,9 @@
 # Part 2 Python Traffic Analytics
 
 This folder contains the reproducible Python workflow required for Part 2. The
-current stage implements Task 1: schema validation, cleaning, outlier handling,
-output validation and auditable logging.
+current stage implements Task 1 and Task 2: schema validation, cleaning,
+outlier handling, hourly feature engineering, output validation and auditable
+logging.
 
 ## Set up the environment
 
@@ -88,6 +89,39 @@ Levels are used as follows:
 - `ERROR`: failures that prevent safe completion, with exception details.
 
 No `print()` statement is used for internal pipeline status.
+
+## Run feature engineering
+
+After the cleaning pipeline completes, run:
+
+```bash
+python part2_python/feature_engineering.py
+```
+
+Generated outputs:
+
+```text
+part2_python/data/processed/traffic_features.csv
+part2_python/data/processed/feature_metadata.json
+part2_python/logs/feature_engineering.log
+```
+
+This stage consolidates repeated weather reports into one row per timestamp,
+while first verifying that every repeated timestamp has a consistent traffic
+target. It creates multi-hot weather flags, calendar and cyclical time features,
+holiday/weekend indicators, derived weather indicators, log transforms and a
+four-level quartile-based congestion target.
+
+The resulting modelling table contains 40,575 unique hourly rows and 36
+columns. The metadata records feature names, congestion thresholds, category
+counts and exploratory scaling parameters. During machine-learning evaluation,
+scalers must be refitted on the training partition only to prevent leakage.
+
+Alternative paths and logging levels are available through:
+
+```bash
+python part2_python/feature_engineering.py --help
+```
 
 ## Run tests
 

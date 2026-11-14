@@ -1,0 +1,86 @@
+{
+  "congestion_category_counts": {
+    "High": 10145,
+    "Low": 10144,
+    "Medium": 10144,
+    "Severe": 10142
+  },
+  "congestion_thresholds": {
+    "q1": 1248.5,
+    "q2": 3427.0,
+    "q3": 4952.0
+  },
+  "date_range": {
+    "end": "2018-09-30 23:00:00",
+    "start": "2012-10-02 09:00:00"
+  },
+  "duplicate_timestamps": 0,
+  "feature_columns": [
+    "date_time",
+    "holiday",
+    "temp",
+    "rain_1h",
+    "snow_1h",
+    "clouds_all",
+    "traffic_volume",
+    "weather_Clear",
+    "weather_Clouds",
+    "weather_Drizzle",
+    "weather_Fog",
+    "weather_Haze",
+    "weather_Mist",
+    "weather_Rain",
+    "weather_Smoke",
+    "weather_Snow",
+    "weather_Squall",
+    "weather_Thunderstorm",
+    "hour",
+    "day_of_week",
+    "year",
+    "month",
+    "is_weekend",
+    "is_holiday",
+    "hour_sin",
+    "hour_cos",
+    "day_sin",
+    "day_cos",
+    "is_precipitation",
+    "is_low_visibility",
+    "is_severe_weather",
+    "temp_zscore",
+    "clouds_all_zscore",
+    "rain_log1p",
+    "snow_log1p",
+    "congestion_category"
+  ],
+  "input_record_rows": 48187,
+  "missing_values": 0,
+  "output_columns": 36,
+  "output_hourly_rows": 40575,
+  "records_consolidated": 7612,
+  "scaling_note": "These full-dataset z-scores are exploratory features only. Refit all scalers using training data only during model evaluation.",
+  "scaling_parameters": {
+    "clouds_all": {
+      "mean": 44.201121380160195,
+      "population_standard_deviation": 38.68078661570293
+    },
+    "temp": {
+      "mean": 281.3800102895872,
+      "population_standard_deviation": 13.096262531942328
+    }
+  },
+  "weather_feature_columns": [
+    "weather_Clear",
+    "weather_Clouds",
+    "weather_Drizzle",
+    "weather_Fog",
+    "weather_Haze",
+    "weather_Mist",
+    "weather_Rain",
+    "weather_Smoke",
+    "weather_Snow",
+    "weather_Squall",
+    "weather_Thunderstorm"
+  ],
+  "weather_feature_count": 11
+}
