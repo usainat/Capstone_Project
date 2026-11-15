@@ -1,0 +1,105 @@
+{
+  "figures": {
+    "01_hourly_weekday_weekend.png": {
+      "interpretation": "Weekday demand has distinct morning and afternoon commuter peaks, while weekend demand is flatter and peaks around midday.",
+      "peaks": {
+        "Weekday": {
+          "average_traffic": 6240.881967213115,
+          "hour": 16
+        },
+        "Weekend": {
+          "average_traffic": 4407.61145194274,
+          "hour": 13
+        }
+      }
+    },
+    "02_traffic_distribution.png": {
+      "interpretation": "The broad, non-normal distribution reflects a mixture of overnight low demand and daytime or commuter demand.",
+      "maximum": 7280,
+      "mean": 3290.650474430068,
+      "median": 3427.0,
+      "minimum": 0,
+      "q1": 1248.5,
+      "q3": 4952.0
+    },
+    "03_temperature_traffic_hexbin.png": {
+      "interpretation": "Temperature has only a weak positive linear relationship with traffic. The association is descriptive and does not establish causation.",
+      "pearson_correlation": 0.13955701991709724,
+      "temperature_celsius_maximum": 36.920000000000016,
+      "temperature_celsius_minimum": -29.75999999999999
+    },
+    "04_weather_average_traffic.png": {
+      "conditions": [
+        {
+          "average_traffic": 3616.947709393799,
+          "condition": "Clouds",
+          "hourly_observations": 15127
+        },
+        {
+          "average_traffic": 3501.2855040470936,
+          "condition": "Haze",
+          "hourly_observations": 1359
+        },
+        {
+          "average_traffic": 3322.444184792378,
+          "condition": "Rain",
+          "hourly_observations": 5563
+        },
+        {
+          "average_traffic": 3286.561941964286,
+          "condition": "Drizzle",
+          "hourly_observations": 1792
+        },
+        {
+          "average_traffic": 3237.65,
+          "condition": "Smoke",
+          "hourly_observations": 20
+        },
+        {
+          "average_traffic": 3055.7351731358913,
+          "condition": "Clear",
+          "hourly_observations": 13371
+        },
+        {
+          "average_traffic": 3009.9168316831683,
+          "condition": "Thunderstorm",
+          "hourly_observations": 1010
+        },
+        {
+          "average_traffic": 3009.327012522361,
+          "condition": "Snow",
+          "hourly_observations": 2795
+        },
+        {
+          "average_traffic": 2933.0819865319863,
+          "condition": "Mist",
+          "hourly_observations": 5940
+        },
+        {
+          "average_traffic": 2703.720394736842,
+          "condition": "Fog",
+          "hourly_observations": 912
+        },
+        {
+          "average_traffic": 2061.75,
+          "condition": "Squall",
+          "hourly_observations": 4
+        }
+      ],
+      "highest_average": {
+        "average_traffic": 3616.947709393799,
+        "condition": "Clouds",
+        "hourly_observations": 15127
+      },
+      "interpretation": "Weather-category differences are descriptive. Rare conditions have unstable averages, and an hour may contain multiple weather flags.",
+      "lowest_average": {
+        "average_traffic": 2061.75,
+        "condition": "Squall",
+        "hourly_observations": 4
+      }
+    }
+  },
+  "generated_figure_count": 4,
+  "method_note": "The source is a one-row-per-hour table. Weather flags are multi-hot, so one hour can contribute to multiple weather conditions.",
+  "source_rows": 40575
+}

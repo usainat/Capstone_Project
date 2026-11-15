@@ -1,0 +1,13 @@
+2026-11-15 00:10:39,173 | INFO | __main__ | Logging configured at DEBUG level; file=/Users/husa/software/AI/nus course/Capstone Project/part2_python/logs/visualizations.log
+2026-11-15 00:10:39,206 | INFO | __main__ | Loaded validated feature table traffic_features.csv with 40575 rows and 36 columns
+2026-11-15 00:10:39,207 | DEBUG | __main__ | Feature date range: 2012-10-02 09:00:00 to 2018-09-30 23:00:00
+2026-11-15 00:10:39,290 | INFO | __main__ | Saved figure: /Users/husa/software/AI/nus course/Capstone Project/part2_python/reports/figures/01_hourly_weekday_weekend.png
+2026-11-15 00:10:39,292 | DEBUG | __main__ | Traffic quartiles: {0.25: 1248.5, 0.5: 3427.0, 0.75: 4952.0}
+2026-11-15 00:10:39,359 | INFO | __main__ | Saved figure: /Users/husa/software/AI/nus course/Capstone Project/part2_python/reports/figures/02_traffic_distribution.png
+2026-11-15 00:10:39,360 | DEBUG | __main__ | Temperature and traffic Pearson correlation: 0.139557
+2026-11-15 00:10:39,518 | INFO | __main__ | Saved figure: /Users/husa/software/AI/nus course/Capstone Project/part2_python/reports/figures/03_temperature_traffic_hexbin.png
+2026-11-15 00:10:39,521 | DEBUG | __main__ | Weather summary: [{'condition': 'Squall', 'average_traffic': 2061.75, 'hourly_observations': 4}, {'condition': 'Fog', 'average_traffic': 2703.720394736842, 'hourly_observations': 912}, {'condition': 'Mist', 'average_traffic': 2933.0819865319863, 'hourly_observations': 5940}, {'condition': 'Snow', 'average_traffic': 3009.327012522361, 'hourly_observations': 2795}, {'condition': 'Thunderstorm', 'average_traffic': 3009.9168316831683, 'hourly_observations': 1010}, {'condition': 'Clear', 'average_traffic': 3055.7351731358913, 'hourly_observations': 13371}, {'condition': 'Smoke', 'average_traffic': 3237.65, 'hourly_observations': 20}, {'condition': 'Drizzle', 'average_traffic': 3286.561941964286, 'hourly_observations': 1792}, {'condition': 'Rain', 'average_traffic': 3322.444184792378, 'hourly_observations': 5563}, {'condition': 'Haze', 'average_traffic': 3501.2855040470936, 'hourly_observations': 1359}, {'condition': 'Clouds', 'average_traffic': 3616.947709393799, 'hourly_observations': 15127}]
+2026-11-15 00:10:39,598 | INFO | __main__ | Saved figure: /Users/husa/software/AI/nus course/Capstone Project/part2_python/reports/figures/04_weather_average_traffic.png
+2026-11-15 00:10:39,600 | INFO | __main__ | Saved visualisation summary: /Users/husa/software/AI/nus course/Capstone Project/part2_python/reports/visualization_summary.json
+2026-11-15 00:10:39,600 | INFO | __main__ | Generated and validated 4 visualisations
+2026-11-15 00:10:39,601 | INFO | __main__ | Visualisation pipeline completed successfully

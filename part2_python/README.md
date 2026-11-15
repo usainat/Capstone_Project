@@ -1,9 +1,9 @@
 # Part 2 Python Traffic Analytics
 
 This folder contains the reproducible Python workflow required for Part 2. The
-current stage implements Task 1 and Task 2: schema validation, cleaning,
-outlier handling, hourly feature engineering, output validation and auditable
-logging.
+current stage implements Tasks 1–3: schema validation, cleaning, outlier
+handling, hourly feature engineering, Matplotlib visualisation, output
+validation and auditable logging.
 
 ## Set up the environment
 
@@ -121,6 +121,39 @@ Alternative paths and logging levels are available through:
 
 ```bash
 python part2_python/feature_engineering.py --help
+```
+
+## Generate visualisations
+
+After feature engineering completes, run:
+
+```bash
+python part2_python/visualizations.py
+```
+
+Generated outputs:
+
+```text
+part2_python/reports/figures/01_hourly_weekday_weekend.png
+part2_python/reports/figures/02_traffic_distribution.png
+part2_python/reports/figures/03_temperature_traffic_hexbin.png
+part2_python/reports/figures/04_weather_average_traffic.png
+part2_python/reports/visualization_summary.json
+part2_python/logs/visualizations.log
+```
+
+The figures compare weekday and weekend demand, show the traffic-volume
+distribution, examine the temperature relationship and compare average traffic
+across multi-hot weather indicators. Each figure has a documented
+interpretation in the summary file. Weather and temperature results are treated
+as descriptive associations rather than causal effects.
+
+Every completed figure is logged at `INFO` level with its saved path, as
+required by the project instructions. Alternative paths and logging levels are
+available through:
+
+```bash
+python part2_python/visualizations.py --help
 ```
 
 ## Run tests
